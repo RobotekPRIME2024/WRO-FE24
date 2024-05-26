@@ -1,7 +1,7 @@
-# WRO-FE24
+<body>
 <h1><Official repository of the Robotek PRIME team from Kazakhstan. It contains all the engineering materials of our self-driven vehicle's model participating in the WRO Future Engineers competition in the season of 2024.></h1>
 
-We used components from a MINDSTORMS EV3 Core Set + a Pixy2 Camera and some other technic pieces from other sets.
+<h5><We used components from a MINDSTORMS EV3 Core Set + a Pixy2 Camera and some other technic pieces from other sets.
 
 A 3D model of the robot can be found here: https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models
 
@@ -17,4 +17,5 @@ Gyro Sensor: The gyro sensor plays a pivotal role in maintaining proper alignmen
 
 The PID regulator operates in a continuous loop throughout the program, ensuring the vehicle remains aligned and on the intended path, supporting its autonomous navigation capabilities.
 
-Pixy2 Camera: A camera is used to detect and differentiate obstacles during the obstacle round. Custom made 3D Print Models for the cover and the case for the camera can be found in the corresponding links.
+Pixy2 Camera: A camera is used to detect and differentiate obstacles during the obstacle round. Custom made 3D Print Models for the cover and the case for the camera can be found in the corresponding links.></h5>
+</body>
