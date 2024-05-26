@@ -1,5 +1,5 @@
 <body>
-<h1><Official repository of the Robotek PRIME team from Kazakhstan. It contains all the engineering materials of our self-driven vehicle's model participating in the WRO Future Engineers competition in the season of 2024.></h1>
+<b><Official repository of the Robotek PRIME team from Kazakhstan. It contains all the engineering materials of our self-driven vehicle's model participating in the WRO Future Engineers competition in the season of 2024.></b>
 
 <h5><We used components from a MINDSTORMS EV3 Core Set + a Pixy2 Camera and some other technic pieces from other sets.
 
