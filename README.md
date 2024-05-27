@@ -74,7 +74,7 @@ The final program for the robot and pseudocode is here: https://github.com/Robot
 
 
 ##Robot
-![photo](.V-photos/Photorealistic/Robot.png)
+![vehph](.V-photos/Photorealistic/Robot.png)
 ![photo](.V-photos/Photorealistic/RobotTop.png)
 ![photo](.V-photos/Photorealistic/RobotBottom.png)
 ![photo](.V-photos/Photorealistic/RobotFront.png)
