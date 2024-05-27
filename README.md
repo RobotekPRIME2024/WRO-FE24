@@ -83,7 +83,7 @@ First you need to configure Pixy2 to detect green and red road signs. Then you n
 
 ![photo](./Images/Trajectory%20of%20road%20sign.jpg)
 
-The final program for the robot and pseudocode are located in the [Source](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Source)
+The final program for the robot and pseudocode are located in the [Source](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Source).
 
 ***
 
@@ -102,3 +102,5 @@ The final program for the robot and pseudocode are located in the [Source](https
 ![photo](./Images/Robot%20photos/Photorealistic/Right.png)
 
 # Performance video
+
+Here is the link to [qualification round demonstration](https://youtu.be/wz5MyXlZ5nA).
