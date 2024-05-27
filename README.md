@@ -2,10 +2,13 @@
 **Robotek PRIME team's repository for WRO Future Engineers 2024.**
 ***
 <div align=center>
-![banner](./Images/Robotek.png)
+
+![logo](./Images/Robotek.png)
+
 </div>
+
 #Mobility management
-we chose a medium motor for steering and two large motors for driving.
+We chose a medium motor for steering and two large motors for driving.
 Comparison of motors:
 The large motor runs at 160-170 rpm, with a running torque of 20 Ncm and a stall torque of 40 Ncm (slower, but stronger).
 The medium motor runs at 240-250 rpm, with a running torque of 8 Ncm and a stall torque of 12 Ncm (faster, but less powerful).
