@@ -39,7 +39,7 @@ We use a medium motor for steering and two large motors in the back for driving.
 
 ## Chassis design
 
-We placed the middle motor for the rudder horizontally, trying to create an ackerman angle, but eventually abandoned this idea. With the help of gears, we increase the number of revolutions of the rear motors by 19% (20/12*20/28). Wheels with a diameter of 62.4 mm also help to increase speed. The speed of our robot is 6.4 m/s (165*20/12*20/28*pi*62.4/100/60). Our robot is rear-wheel drive. This greatly simplifies the design and improves maintainability. We have a differential on the rear axle, which helps reduce the turning radius. 3D models of the robot made in BrickLink Studio 2.0 and SolidWorks are located in the [Models](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models) folder.
+We placed the middle motor for the rudder horizontally, trying to create an ackerman angle, but eventually abandoned this idea. With the help of gears, we increase the number of revolutions of the rear motors by 19%. Wheels with a diameter of 62.4 mm also help to increase speed. The speed of our robot is 6.4 m/s. Our robot is rear-wheel drive. This greatly simplifies the design and improves maintainability. We have a differential on the rear axle, which helps reduce the turning radius. 3D models of the robot made in BrickLink Studio 2.0 and SolidWorks are located in the [Models](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models) folder.
 
 ***
 
@@ -68,7 +68,7 @@ Links to power schemes for each electronic part:
 
 ## Sensor management
 
-We use a color sensor to detect and determine the color of lines, a gyroscope to determine the angle of the robot, one ultrasonic sensor in the “obstacle” (clockwise or counterclockwise) or two in the “open” to determine the distance between the robot and the wall. We also use the Pixie Camera to detect and determine the color of road signs. To determine the most accurate distance of the robot from the border, we conducted a research, which you can find in the [Researches](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Researches/5-8.5(angle-error%20of%20ultrasonic)). The ultrasonic sensor shows incorrect data if it is located at an angle. On April 8, we made a graph of error versus angle.
+We use a color sensor to detect and determine the color of lines, a gyroscope to determine the angle of the robot, one ultrasonic sensor in the “obstacle” (clockwise or counterclockwise) or two in the “open” to determine the distance between the robot and the wall. We also use the Pixy2 Camera to detect and determine the color of road signs. To determine the most accurate distance of the robot from the border, we conducted a research, which you can find in the [Researches](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Researches/5-8.5(angle-error%20of%20ultrasonic)). The ultrasonic sensor shows incorrect data if it is located at an angle. On April 8, we made a graph of error versus angle.
 
 ***
 
@@ -88,15 +88,16 @@ The final program for the robot and pseudocode are located in the [Source](https
 
 # Pictures
 ## Team photos
-
+![photo](./Images/Team Photos/Official.jpg)
+![photo](./Images/Team Photos/Funny.jpg)
 
 ## Robot photos
-![vehph](./Images/V-photos/Photorealistic/Robot.png)
-![photo](./Images/V-photos/Photorealistic/RobotTop.png)
-![photo](./Images/V-photos/Photorealistic/RobotBottom.png)
-![photo](./Images/V-photos/Photorealistic/RobotFront.png)
-![photo](./Images/V-photos/Photorealistic/RobotRear.png)
-![photo](./Images/V-photos/Photorealistic/RobotLeft.png)
-![photo](./Images/V-photos/Photorealistic/RobotRight.png)
+![photo](./Images/Robot photos/Photorealistic/Front-left.png)
+![photo](./Images/Robot photos/Photorealistic/Top.png)
+![photo](./Images/Robot photos/Photorealistic/Bottom.png)
+![photo](./Images/Robot photos/Photorealistic/Front.png)
+![photo](./Images/Robot photos/Photorealistic/Rear.png)
+![photo](./Images/Robot photos/Photorealistic/Left.png)
+![photo](./Images/Robot photos/Photorealistic/Right.png)
 
 # Performance video
