@@ -72,7 +72,13 @@ The final program for the robot and pseudocode is here: https://github.com/Robot
 
 
 ##Robot
-
+![photo](.V-photos/Photorealistic/Robot.png)
+![photo](.V-photos/Photorealistic/RobotTop.png)
+![photo](.V-photos/Photorealistic/RobotBottom.png)
+![photo](.V-photos/Photorealistic/RobotFront.png)
+![photo](.V-photos/Photorealistic/RobotRear.png)
+![photo](.V-photos/Photorealistic/RobotLeft.png)
+![photo](.V-photos/Photorealistic/RobotRight.png)
 
 #Performance videos
 
