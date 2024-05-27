@@ -5,7 +5,7 @@
 ![logo](./Images/Robotek.png)
 </div>
 
-* [**Mobility management**](#mobility-management)
+* [**Mobility Management**](#mobility-management)
   * [Motor Selection and Implementation](#motor-selection-and-implementation)
   * [Chassis Design and Implementation](#chassis-design-and-implementation)
 * [**Power and Sense Management**](#power-and-sense-management)
@@ -16,7 +16,7 @@
   * [Trajectory Calibration](#trajectory-calibration)
   * [Integration into the Robot's Program](#Integration-into-the-Robot's-Program)
   * [Pseudo Code](#pseudo-code)
-* [**Photos**](#photos)
+* [**Photos**](#Pictures)
   * [Team Photos](#team-photos)
   * [Vehicle Photos](#vehicle-photos)
 * [**Performance Videos**](#performance-videos)
