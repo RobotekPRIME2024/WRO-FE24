@@ -18,7 +18,6 @@
   * [Power management](#power-management)
 * [**Engineering factor**](#engineering-factor)
 * [**Obstacle management**](#obstacle-management)
-  * [Program](#program)
 * [**Pictures**](#pictures)
   * [Team photos](#team-photos)
   * [Robot photos](#robot-photos)
@@ -80,7 +79,9 @@ We used components from the MINDSTORMS EV3 Core Set, a Pixy2 camera and some oth
 
 # Obstacle management
 
-## Program
+First you need to configure Pixy2 to detect green and red road signs. Then you need to find the trajectory of the road sign using the Pixy2 camera. To do this, we launch the robot so that it goes around the road sign and records its coordinates using the Pixy2 camera. he takes the center of the road sign as the coordinates. After that, we transfer the data into a table and use the built-in tools in Google Sheets to find the equation. The robot tries to adhere to this trajectory. If the object is red, then x of function are multiplied by 1, and if the object is green, then x of function are multiplied by -1 (inverse function).
+
+![photo](./Images/Trajectory%20of%20road%20sign.jpg)
 
 The final program for the robot and pseudocode are located in the [Source](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Source)
 
@@ -88,16 +89,16 @@ The final program for the robot and pseudocode are located in the [Source](https
 
 # Pictures
 ## Team photos
-![photo](./Images/Team Photos/Official.jpg)
-![photo](./Images/Team Photos/Funny.jpg)
+![photo](./Images/Team%20Photos/Official.jpg)
+![photo](./Images/Team%20Photos/Funny.jpg)
 
 ## Robot photos
-![photo](./Images/Robot photos/Photorealistic/Front-left.png)
-![photo](./Images/Robot photos/Photorealistic/Top.png)
-![photo](./Images/Robot photos/Photorealistic/Bottom.png)
-![photo](./Images/Robot photos/Photorealistic/Front.png)
-![photo](./Images/Robot photos/Photorealistic/Rear.png)
-![photo](./Images/Robot photos/Photorealistic/Left.png)
-![photo](./Images/Robot photos/Photorealistic/Right.png)
+![photo](./Images/Robot%20photos/Photorealistic/Front-left.png)
+![photo](./Images/Robot%20photos/Photorealistic/Top.png)
+![photo](./Images/Robot%20photos/Photorealistic/Bottom.png)
+![photo](./Images/Robot%20photos/Photorealistic/Front.png)
+![photo](./Images/Robot%20photos/Photorealistic/Rear.png)
+![photo](./Images/Robot%20photos/Photorealistic/Left.png)
+![photo](./Images/Robot%20photos/Photorealistic/Right.png)
 
 # Performance video
