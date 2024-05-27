@@ -67,7 +67,7 @@ We use a color sensor to detect and determine the color of lines, a gyroscope to
 
 The final program for the robot and pseudocode is here: https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/SRC
 
-#Pictures
+##Pictures
 ##Team
 
 
