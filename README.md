@@ -82,7 +82,7 @@ First you need to configure Pixy2 to detect green and red road signs. Then you n
 
 Compared to the robot from the regional stage, we only drive with the held of the Pixy2 Camera on the first lap, during which we record the coordinates of the points along which it will drive to avoid road signs on the remaining laps. We use local ododmetry to determine the position of the robot. To calculate the robot's x, we multiply the distance traveled by the cosine of the robot's angle, and to calculate the robot's y we multiply the distance traveled by the sine of the robot's angle. We calculate the distance traveled by multiplying the encoder angle by a coefficient equal to 15.43 dergrees to cm.
 
-The final program for the robot is located in the [Source](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Source).
+The final robot program with pseudocode is located in the [Source](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Source).
 
 ***
 
