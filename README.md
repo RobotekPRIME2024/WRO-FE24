@@ -30,15 +30,14 @@
 ## Motor selection
 
 Comparison of motors:
-
 The large motor runs at 160-170 rpm, with a running torque of 20 Ncm and a stall torque of 40 Ncm (slower, but stronger).
-
 The medium motor runs at 240-250 rpm, with a running torque of 8 Ncm and a stall torque of 12 Ncm (faster, but less powerful).
-We use a medium motor for steering and two large motors in the back for driving. The medium motor is lighter and is sufficient for steering, while the larger motors have more power, which helps them be the main driving force of the robot.
+We use a medium motor for steering and two medium motors in the back for driving. We use medium motors because they are lighter, faster and have enough torque.
+<!The medium motor is lighter and is sufficient for steering, while the larger motors have more power, which helps them be the main driving force of the robot.>
 
 ## Chassis design
 
-We placed the middle motor for the rudder horizontally, trying to create an ackerman angle, but eventually abandoned this idea. With the help of gears, we increase the number of revolutions of the rear motors by 19%. Wheels with a diameter of 62.4 mm also help to increase speed. The speed of our robot is 6.4 m/s. Our robot is rear-wheel drive. This greatly simplifies the design and improves maintainability. We have a differential on the rear axle, which helps reduce the turning radius. 3D models of the robot made in BrickLink Studio 2.0 and SolidWorks are located in the [Models](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models) folder.
+We placed the steering motor horizontally to save space and make an Ackerman angle. The length of our robot is 16 cm, which allows us to park perpendicularly. With the help of gears, we increase the number of revolutions of the rear motors by 19%. Wheels with a diameter of 62.4 mm also help to increase speed. The maximum speed of our robot is 1 m/s. Our robot is rear-wheel drive. This greatly simplifies the design and improves maintainability. We have a differential on the rear axle, which helps reduce the turning radius. 3D models of the robot made in BrickLink Studio 2.0 and SolidWorks are located in the [Models](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models) folder.
 
 ***
 
@@ -53,8 +52,6 @@ Links to power schemes for each electronic part:
 
 [Battery](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Schemes/95656%20Rechargeable%20battery.pdf)
 
-[Large motor](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Schemes/95658%20Large%20motor.pdf)
-
 [Medium motor](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Schemes/99455%20Medium%20motor.pdf)
 
 [Color Sensor](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Schemes/95650%20Color%20sensor.pdf)
@@ -67,7 +64,7 @@ Links to power schemes for each electronic part:
 
 ## Sensor management
 
-We use a color sensor to detect and determine the color of lines, a gyroscope to determine the angle of the robot, one ultrasonic sensor in the “obstacle” (clockwise or counterclockwise) or two in the “open” to determine the distance between the robot and the wall. We also use the Pixy2 Camera to detect and determine the color of road signs. To determine the most accurate distance of the robot from the border, we conducted a research, which you can find in the [Researches](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Researches/5-8.5(angle-error%20of%20ultrasonic)). The ultrasonic sensor shows incorrect data if it is located at an angle. On April 8, we made a graph of error versus angle.
+We use a color sensor to detect and determine the color of lines, a gyroscope to determine the angle of the robot, ultrasonic sensor to determine the distance between from the robot to the wall, thereby updating the odometry on turns - when seeing a line. We also use the Pixy2 Camera to detect and determine the color of road signs on the first 'obstacle' lap. To determine the most accurate distance of the robot from the border, we conducted a research, which you can find in the [Researches](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Researches/5-8.5(angle-error%20of%20ultrasonic)). The ultrasonic sensor shows incorrect data if it is located at an angle. On April 8, we made a graph of error versus angle.
 
 ***
 
@@ -83,7 +80,9 @@ First you need to configure Pixy2 to detect green and red road signs. Then you n
 
 ![photo](./Images/Trajectory%20of%20road%20sign.jpg)
 
-The final program for the robot and pseudocode are located in the [Source](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Source).
+Compared to the robot from the regional stage, we only drive with the held of the Pixy2 Camera on the first lap, during which we record the coordinates of the points along which it will drive to avoid road signs on the remaining laps. We use local ododmetry to determine the position of the robot. To calculate the robot's x, we multiply the distance traveled by the cosine of the robot's angle, and to calculate the robot's y we multiply the distance traveled by the sine of the robot's angle. We calculate the distance traveled by multiplying the encoder angle by a coefficient equal to 15.43 dergrees to cm.
+
+The final program for the robot is located in the [Source](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Source).
 
 ***
 
