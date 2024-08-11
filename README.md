@@ -36,10 +36,11 @@ We use a medium motor for steering and two medium motors in the back for driving
 <!The medium motor is lighter and is sufficient for steering, while the larger motors have more power, which helps them be the main driving force of the robot.>
 
 ## Chassis design
+<div align=center>
 
-![photo](./Images/Ackermann%20steering%20geometry.png)
-
-We placed the steering motor horizontally to save space and make an simple approximation of Ackerman angle ([photo above](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Images/Ackermann%20steering%20geometry.png)). The length of our robot is 16 cm, which allows us to park perpendicularly. With the help of gears, we increase the number of revolutions of the rear motors by 19%. Wheels with a diameter of 62.4 mm also help to increase speed. The maximum speed of our robot is 1 m/s. Our robot is rear-wheel drive. This greatly simplifies the design and improves maintainability. We have a differential on the rear axle, which helps reduce the turning radius. By using Ackermann steering geometry, we increase the accuracy of odometry, prevent wheel spin, and reduce the turning radius. We 3D models of the robot made in BrickLink Studio 2.0 and SolidWorks are located in the [Models](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models) folder. Building instructions located in the [Instruction](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Instruction.pdf) file.
+ ![photo](./Images/Ackermann%20steering%20geometry.png)
+</div>
+We placed the steering motor horizontally to save space and make an simple approximation of Ackerman angle ([photo above](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Images/Ackermann%20steering%20geometry.png)). The length of our robot is 16 cm, which allows us to park perpendicularly. With the help of gears, we increase the number of revolutions of the rear motors by 19%. Wheels with a diameter of 62.4 mm also help to increase speed. The maximum speed of our robot is 1 m/s. Our robot is rear-wheel drive. This greatly simplifies the design and improves maintainability. We have a differential on the rear axle, which helps reduce the turning radius. By using Ackermann steering geometry, we increase the accuracy of odometry, prevent wheel spin, and reduce the turning radius. The real Ackermann steering geometry and it's differnces from the approximation are described in the [Design of an Ackermann-type steering mechanism](https://www.researchgate.net/publication/265755401_Design_of_an_Ackermann_Type_Steering_Mechanism). We 3D models of the robot made in BrickLink Studio 2.0 and SolidWorks are located in the [Models](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models) folder. Building instructions located in the [Instruction](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Instruction.pdf) file.
 
 ***
 
