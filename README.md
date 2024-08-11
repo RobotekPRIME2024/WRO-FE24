@@ -1,9 +1,9 @@
 **Robotek PRIME team's repository for WRO Future Engineers 2024.**
 
 <div align=center>
- 
-![logo](./Images/Robotek.png)
+ Members: Dastan Musrepov, Vagis Disembayev
 
+ ![logo](./Images/Robotek.png)
 </div>
 
 ***
@@ -37,7 +37,9 @@ We use a medium motor for steering and two medium motors in the back for driving
 
 ## Chassis design
 
-We placed the steering motor horizontally to save space and make an Ackerman angle. The length of our robot is 16 cm, which allows us to park perpendicularly. With the help of gears, we increase the number of revolutions of the rear motors by 19%. Wheels with a diameter of 62.4 mm also help to increase speed. The maximum speed of our robot is 1 m/s. Our robot is rear-wheel drive. This greatly simplifies the design and improves maintainability. We have a differential on the rear axle, which helps reduce the turning radius. 3D models of the robot made in BrickLink Studio 2.0 and SolidWorks are located in the [Models](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models) folder.
+![photo](./Images/Ackermann%20steering%20geometry.jpg)
+
+We placed the steering motor horizontally to save space and make an simple approximation of Ackerman angle (photo above). The length of our robot is 16 cm, which allows us to park perpendicularly. With the help of gears, we increase the number of revolutions of the rear motors by 19%. Wheels with a diameter of 62.4 mm also help to increase speed. The maximum speed of our robot is 1 m/s. Our robot is rear-wheel drive. This greatly simplifies the design and improves maintainability. We have a differential on the rear axle, which helps reduce the turning radius. By using Ackermann steering geometry, we increase the accuracy of odometry, prevent wheel spin, and reduce the turning radius. We 3D models of the robot made in BrickLink Studio 2.0 and SolidWorks are located in the [Models](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models) folder. Building instructions located in the [Instruction](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Instruction.pdf) file.
 
 ***
 
@@ -76,11 +78,11 @@ We used components from the MINDSTORMS EV3 Core Set, a Pixy2 camera and some oth
 
 # Obstacle management
 
-First you need to configure Pixy2 to detect green and red road signs. Then you need to find the trajectory of the road sign using the Pixy2 camera. To do this, we launch the robot so that it goes around the road sign and records its coordinates using the Pixy2 camera. he takes the center of the road sign as the coordinates. After that, we transfer the data into a table and use the built-in tools in Google Sheets to find the equation. The robot tries to adhere to this trajectory. If the object is red, then x of function are multiplied by 1, and if the object is green, then x of function are multiplied by -1 (inverse function).
+First you need to configure Pixy2 to detect green and red road signs. Then you need to find the trajectory of the road sign using the Pixy2 camera. To do this, we launch the robot so that it goes around the road sign and records its coordinates using the Pixy2 camera. He takes the center of the road sign as the coordinates. After that, we transfer the data into a table and use the built-in tools in Google Sheets to find the equation. The robot tries to adhere to this trajectory. If the object is red, then x of function are multiplied by 1, and if the object is green, then x of function are multiplied by -1 (inverse function).
 
 ![photo](./Images/Trajectory%20of%20road%20sign.jpg)
 
-Compared to the robot from the regional stage, we only drive with the held of the Pixy2 Camera on the first lap, during which we record the coordinates of the points along which it will drive to avoid road signs on the remaining laps. We use local ododmetry to determine the position of the robot. To calculate the robot's x, we multiply the distance traveled by the cosine of the robot's angle, and to calculate the robot's y we multiply the distance traveled by the sine of the robot's angle. We calculate the distance traveled by multiplying the encoder angle by a coefficient equal to 15.43 dergrees to cm.
+Compared to the robot from the regional stage, we only drive with the held of the Pixy2 Camera on the first lap, during which we record the coordinates of the points along which it will drive to avoid road signs on the remaining laps. We use local ododmetry to determine the position of the robot. To calculate the robot's x, we multiply the distance traveled by the cosine of the robot's angle, and to calculate the robot's y we multiply the distance traveled by the sine of the robot's angle. We calculate the distance traveled by multiplying the encoder angle by a coefficient equal to 15.43 dergrees to cm. We reset robot's odometry on turns, without using ultrasonic.
 
 The final robot program with pseudocode is located in the [Source](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Source).
 
