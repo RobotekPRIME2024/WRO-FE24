@@ -30,7 +30,11 @@ Last year, we reset the robot's position on turns. But if the robot was at an an
 </div>
 The graphs are similar at distances of 50 and 100 cm.
 
-On May 5, we needed to collect data again, but this time more accurate. Plan:
+<h2> 2nd test: </h2>
+
+On May 5, we needed to collect data again, but this time more accurate.
+
+<h3> Plan: </h3>
 
 ⦁	Make a measuring robot. Need ultrasonic sensor, gyroscope, EV3 Brick.	The ultrasonic sensor must be placed on a rotating platform with a gyroscope.
 
@@ -40,7 +44,7 @@ On May 5, we needed to collect data again, but this time more accurate. Plan:
 
 ⦁	Transfer data from file to table
 
-Code:
+<h3> Code: </h3>
 <div align=center>
 
  ![photo](./Images/Research%20photos/Program%20for%20measurements.png)
@@ -60,7 +64,7 @@ As a result of the 2nd tests, we got this graph:
 
  ![photo](./Images/Research%20photos/Test2Graph1.png)
 </div>
-Conclusions:
+<h2> Conclusions: </h2>
 The graph of error versus angle can be roughly expressed by the function 
 y=0.00856x^2-0.0967x+0.345
 error=0.345-0.0967angle+0.00856angle^2
