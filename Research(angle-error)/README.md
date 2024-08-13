@@ -44,7 +44,7 @@ On May 5, we needed to collect data again, but this time more accurate.
 
 ⦁	Transfer data from file to table
 
-<h3> (Code:)[https://github.com/RobotekPRIME2024/WRO-FE24/edit/main/Research(angle-error)/Test2Code.ev3] </h3>
+<h3> [Code:](https://github.com/RobotekPRIME2024/WRO-FE24/edit/main/Research(angle-error)/Test2Code.ev3) </h3>
 <div align=center>
 
  ![photo](./Images/Research%20photos/Program%20for%20measurements.png)
