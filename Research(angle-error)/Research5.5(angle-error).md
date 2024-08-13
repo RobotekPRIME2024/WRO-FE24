@@ -1,16 +1,33 @@
 On May 5, we collected data for a graph of error versus angle and studied the conversion from polar to Cartesian coordinates and vice versa, odometry, tactics for zeroing odometry, and determining the position of bars.
 
-Research:
+<h1> Research: </h1>
+
 Last year, we reset the robot's position on turns. But if the robot was at an angle, the ultrasonic sensor showed incorrect data. To find the real distance from the robot to the wall, we decided to make a graph of error versus angle. Error refers to the difference between what the sensor outputs and the expected data. We expected that the graph would not depend on the distance from the robot to the wall. We tried to collect this data on April 30, but the distances turned out to be very inaccurate because we measured them with a ruler.
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Explanatory%20board.jpg)
+  ![photo](./Images/Research%20photos/Explanation.jpg)
+</div>
 1st test’s error graph at a distance of 10 cm:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test1Graph1)
+</div>
 1st test’s error graph at a distance of 25 cm:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test1Graph2)
+</div>
 1st test’s error graph at a distance of 50 cm:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test1Graph2)
+</div>
 1st test’s error graph at a distance of 100 cm:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test1Graph3)
+</div>
 The graphs are similar at distances of 50 and 100 cm.
 
 On May 5, we needed to collect data again, but this time more accurate. Plan:
@@ -24,7 +41,10 @@ On May 5, we needed to collect data again, but this time more accurate. Plan:
 ⦁	Once the ultrasonic sensor starts showing 255, you need to change the distance
 ⦁	Transfer data from file to table
 Code:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Program%20for%20measurements)
+</div>
 Measuring process (robot without wheels):
 
 Final robot for measurements:
