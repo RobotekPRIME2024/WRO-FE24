@@ -31,15 +31,15 @@ Last year, we reset the robot's position on turns. But if the robot was at an an
 The graphs are similar at distances of 50 and 100 cm.
 
 On May 5, we needed to collect data again, but this time more accurate. Plan:
-⦁	Make a measuring robot
-⦁	Need ultrasonic sensor, gyroscope, EV3 Brick
-⦁	The ultrasonic sensor must be placed on a rotating platform with a gyroscope
-⦁	Write code
-⦁	Write data to a file at the click of a button
-⦁	Take measurements
-⦁	Smoothly rotate the platform by pressing the button
-⦁	Once the ultrasonic sensor starts showing 255, you need to change the distance
+
+⦁	Make a measuring robot. Need ultrasonic sensor, gyroscope, EV3 Brick.	The ultrasonic sensor must be placed on a rotating platform with a gyroscope.
+
+⦁	Write code:	Write data to a file at the click of a button.
+
+⦁ Take measurements:	Smoothly rotate the platform by pressing the button.	Once the ultrasonic sensor starts showing 255, you need to change the distance.
+
 ⦁	Transfer data from file to table
+
 Code:
 <div align=center>
 
