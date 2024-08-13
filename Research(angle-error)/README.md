@@ -6,27 +6,27 @@ Last year, we reset the robot's position on turns. But if the robot was at an an
 <div align=center>
 
  ![photo](./Images/Research%20photos/Explanatory%20board.jpg)
-  ![photo](./Images/Research%20photos/Explanation.jpg)
+ ![photo](./Images/Research%20photos/Explanation.jpg)
 </div>
 1st test’s error graph at a distance of 10 cm:
 <div align=center>
 
- ![photo](./Images/Research%20photos/Test1Graph1)
+ ![photo](./Images/Research%20photos/Test1Graph1.png)
 </div>
 1st test’s error graph at a distance of 25 cm:
 <div align=center>
 
- ![photo](./Images/Research%20photos/Test1Graph2)
+ ![photo](./Images/Research%20photos/Test1Graph2.png)
 </div>
 1st test’s error graph at a distance of 50 cm:
 <div align=center>
 
- ![photo](./Images/Research%20photos/Test1Graph2)
+ ![photo](./Images/Research%20photos/Test1Graph2.png)
 </div>
 1st test’s error graph at a distance of 100 cm:
 <div align=center>
 
- ![photo](./Images/Research%20photos/Test1Graph3)
+ ![photo](./Images/Research%20photos/Test1Graph3.png)
 </div>
 The graphs are similar at distances of 50 and 100 cm.
 
@@ -43,14 +43,23 @@ On May 5, we needed to collect data again, but this time more accurate. Plan:
 Code:
 <div align=center>
 
- ![photo](./Images/Research%20photos/Program%20for%20measurements)
+ ![photo](./Images/Research%20photos/Program%20for%20measurements.png)
 </div>
 Measuring process (robot without wheels):
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Measurement.jpg)
+</div>
 Final robot for measurements:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Robot%20for%20measurements.jpg)
+</div>
 As a result of the 2nd tests, we got this graph:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test2Graph1.png)
+</div>
 Conclusions:
 The graph of error versus angle can be roughly expressed by the function 
 y=0.00856x^2-0.0967x+0.345
@@ -58,27 +67,60 @@ error=0.345-0.0967angle+0.00856angle^2
 error=horisontal_dist/cos(angle*π/180)
 
 2nd test’s error graph at a distance of 9.1 cm:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test2Graph2.png)
+</div>
 2nd test’s error graph at a distance of 17.9 cm:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test2Graph3.png)
+</div>
 2nd test’s error graph at a distance of 25.5 cm:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test2Graph4.png)
+</div>
 2nd test’s error graph at a distance of 33.8 cm:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test2Graph5.png)
+</div>
 2nd test’s error graph at a distance of 42 cm:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test2Graph6.png)
+</div>
 2nd test’s error graph at a distance of 50 cm:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test2Graph7.png)
+</div>
 2nd test’s error graph at a distance of 59 cm:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test2Graph8.png)
+</div>
 2nd test’s error graph at a distance of 67 cm:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test2Graph9.png)
+</div>
 2nd test’s error graph at a distance of 75 cm:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test2Graph10.png)
+</div>
 2nd test’s error graph at a distance of 82.6 cm:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test2Graph11.png)
+</div>
 The final results of the research:
+<div align=center>
 
+ ![photo](./Images/Research%20photos/Test2Graph12.png)
+</div>
 length - angle, width - distance, height - error.
 
 We will take this into account when measuring the distance from the robot to the wall, to minimize the difference between what the sensor produces and the expected data. Thanks to this, our robot will more accurately determine its distance to the wall, which will make his drive more stable.
