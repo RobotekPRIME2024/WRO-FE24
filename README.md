@@ -17,7 +17,7 @@
     * [Instruction](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Instruction.pdf)
 * [**Power and sense management**](#power-and-sense-management)
   * [Sensor management](#sensor-management)
-    * [Research(angle-error)](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Ultrasonic_research/README.md) 
+    * [Ultrasonic research](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Ultrasonic_research/README.md) 
   * [Power management](#power-management)
     * [Schemes](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Schemes)
 * [**Engineering factor**](#engineering-factor)
