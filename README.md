@@ -27,8 +27,8 @@
   * [Team photos](#team-photos)
   * [Robot photos](#robot-photos)
 * [**Performance video**](#performance-video)
-  * [qualification](https://youtu.be/wz5MyXlZ5nA)
-  * [obstacle](https://youtu.be/)
+  * [Qualification](https://youtu.be/wz5MyXlZ5nA)
+  * [Obstacle](https://youtu.be/)
 
 ***
 
