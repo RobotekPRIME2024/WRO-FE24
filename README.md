@@ -17,7 +17,7 @@
     * [Instruction](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Instruction.pdf)
 * [**Power and sense management**](#power-and-sense-management)
   * [Sensor management](#sensor-management)
-    * [Research(angle-error)](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Research(angle-error)/README.md) 
+    * [Research(angle-error)](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Ultrasonic_research/README.md) 
   * [Power management](#power-management)
     * [Schemes](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Schemes)
 * [**Engineering factor**](#engineering-factor)
@@ -27,6 +27,8 @@
   * [Team photos](#team-photos)
   * [Robot photos](#robot-photos)
 * [**Performance video**](#performance-video)
+  * [qualification](https://youtu.be/wz5MyXlZ5nA)
+  * [obstacle](https://youtu.be/)
 
 ***
 
@@ -45,7 +47,7 @@ We use a medium motor for steering and two medium motors in the back for driving
 
  ![photo](./Images/Ackermann_steering_geometry.png)
 </div>
-We placed the steering motor horizontally to save space and make an 4 linkage approximation of Ackerman angle ( [photo above](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Images/Ackermann_steering_geometry.png) ). The steering motor works without gears for increased speed and precision. The width of our robot is 16 cm and the length of our robot is 13.9 cm, which allows us to park perpendicularly. Gears on the rear motors are 1:1 (excluding differential) and diameter of the wheels is 49.5 mm, all this increases the accuracy of odometry. The maximum speed of our robot is 14.7 cm/s. Our robot is rear-wheel drive. This greatly simplifies the design and improves maintainability. We have a differential on the rear axle, which helps reduce the turning radius. By using Ackermann steering geometry, we increase the accuracy of odometry, prevent wheel spin, and reduce the turning radius. The real Ackermann 5 linkage steering geometry and it's differnces from the 4 linkage approximation are described in the [Design of an Ackermann-type steering mechanism](https://www.researchgate.net/publication/265755401_Design_of_an_Ackermann_Type_Steering_Mechanism). But the real 5 linkage Ackermann steering geometry can't be made from Lego. 3D models of the robot made in BrickLink Studio 2.0 and SolidWorks are located in the [Models](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models) folder. Building instructions located in the [Instruction](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Instruction.pdf) file.
+We placed the steering motor horizontally to save space and make an 4 linkage approximation of Ackerman angle ( [photo above](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Images/Ackermann_steering_geometry.png) ). The steering motor works without gears for increased speed and precision. The width of our robot is 16 cm and the length of our robot is less than 14 cm, which allows us to park perpendicularly. Gears on the rear motors are 1:1 (excluding differential) and diameter of the wheels is 43.2 mm, all this increases the accuracy of odometry. The maximum speed of our robot is 14.7 cm/s. Our robot is rear-wheel drive. This greatly simplifies the design and improves maintainability. We have a differential on the rear axle, which helps reduce the turning radius. By using Ackermann steering geometry, we increase the accuracy of odometry, prevent wheel spin, and reduce the turning radius. The real Ackermann 5 linkage steering geometry and it's differnces from the 4 linkage approximation are described in the [Design of an Ackermann-type steering mechanism](https://www.researchgate.net/publication/265755401_Design_of_an_Ackermann_Type_Steering_Mechanism) . But the real 5 linkage Ackermann steering geometry can't be made from Lego. 3D models of the robot made in BrickLink Studio 2.0 and PixyCam mount are located in the [Models](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models) folder. Building instructions located in the [Instruction](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Instruction.pdf) file.
 
 ***
 
@@ -53,32 +55,17 @@ We placed the steering motor horizontally to save space and make an 4 linkage ap
 
 ## Power management
 
-The power for the EV3 Brick and the whole vehicle comes from a rechargeable 10V Lithium Battery. It (with a brick) is placed closer to the front axle than to the rear to ensure good traction of the front wheels when cornering.
-<h4> Links to power schemes for each electronic part: </h4>
-
-[EV3 P-Brick](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Schemes/95646c01%20Programmable%20brick.pdf)
-
-[Battery](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Schemes/95656%20Rechargeable%20battery.pdf)
-
-[Medium motor](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Schemes/99455%20Medium%20motor.pdf)
-
-[Color Sensor](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Schemes/95650%20Color%20sensor.pdf)
-
-[Ultrasonic Sensor](schemes/ultrasonic-sensor.pdf)
-
-[Gyro Sensor](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Schemes/99380%20Gyro%20sensor.pdf)
-
-[PixyCam 2.1](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Schemes/PixyCam%202.1.pdf)
+The power for the EV3 Brick and the whole vehicle comes from a rechargeable 10V Lithium Battery. It (with a brick) is placed closer to the front axle than to the rear to ensure good traction of the front wheels when cornering. Schemes for each electronic part of the robot can be found [here](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Scheme.pdf).
 
 ## Sensor management
 
-We use a color sensor to detect and determine the color of lines, a gyroscope to determine the angle of the robot, ultrasonic sensor to determine the distance between from the robot to the wall, thereby updating the odometry on turns - when seeing a line. We also use the PixyCam 2.1 to detect and determine the color of road signs on the first 'obstacle' lap. To determine the most accurate distance of the robot from the border, we conducted a research, which you can find in the [Researches](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Research(angle-error)). The ultrasonic sensor shows incorrect data if it is located at an angle. On April 8, we made a graph of error versus angle.
+We use a color sensor to detect and determine the color of lines, a gyroscope to determine the angle of the robot, ultrasonic sensor to determine the distance between from the robot to the wall, thereby updating the odometry on turns - when seeing a line. We also use the PixyCam 2.1 to detect and determine the color of road signs on the first 'obstacle' lap. To determine the most accurate distance of the robot from the border, we conducted a research, which you can find in the [Researches](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Ultrasonic_research). The ultrasonic sensor shows incorrect data if it is located at an angle. On April 8, we made a graph of error versus angle.
 
 ***
 
 # Engineering factor
 
-We used components from the MINDSTORMS EV3 Core Set, a PixyCam 2.1, some other technic pieces from other sets and 3D printed mont for PixyCam.
+We used components from the MINDSTORMS EV3 Core Set, a PixyCam 2.1, some other technic pieces from other sets and 3D printed [PixyCam case](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models/PixyCam2Case).
 
 ***
 
@@ -86,9 +73,9 @@ We used components from the MINDSTORMS EV3 Core Set, a PixyCam 2.1, some other t
 
 First you need to configure PixyCam 2.1 to detect green and red road signs. Then you need to find the trajectory of the road sign using the PixyCam 2.1. To do this, we launch the robot so that it goes around the road sign and records its coordinates using the PixyCam 2.1. He takes the center of the road sign as the coordinates. After that, we transfer the data into a table and use the built-in tools in Google Sheets to find the equation. The robot tries to adhere to this trajectory. If the object is red, then x of function are multiplied by 1, and if the object is green, then x of function are multiplied by -1 (inverse function).
 
-![photo](./Images/Trajectory%20of%20road%20sign.jpg)
+![photo](./Images/Trajectory_of_road_sign.jpg)
 
-Compared to the robot from the regional stage, we only drive with the held of the PixyCam 2.1 on the first lap, during which we record the coordinates of the points along which it will drive to avoid road signs on the remaining laps. We use local ododmetry to determine the position of the robot. To calculate the robot's x, we multiply the distance traveled by the cosine of the robot's angle, and to calculate the robot's y we multiply the distance traveled by the sine of the robot's angle. We calculate the distance traveled by multiplying the encoder angle by a coefficient equal to 15.43 dergrees to cm. We reset robot's odometry on turns, without using ultrasonic.
+Compared to the robot from the regional stage, we only drive with the held of the PixyCam 2.1 on the first lap, during which we record the coordinates of the points along which it will drive to avoid road signs on the remaining laps. We use local ododmetry to determine the position of the robot. To calculate the robot's x, we multiply the distance traveled by the cosine of the robot's angle, and to calculate the robot's y we multiply the distance traveled by the sine of the robot's angle. We calculate the distance traveled by multiplying the encoder angle by a coefficient equal to 33 dergrees to cm. We reset robot's odometry on turns, without using ultrasonic.
 
 The final robot program with pseudocode is located in the [Source](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Source).
 
@@ -96,16 +83,16 @@ The final robot program with pseudocode is located in the [Source](https://githu
 
 # Pictures
 ## Team photos
-![photo](./Images/Team%20Photos/Official.jpg)
-![photo](./Images/Team%20Photos/Funny.jpg)
+![photo](./Images/Team_photos/Official.jpg)
+![photo](./Images/Team_photos/Funny.jpg)
 
 ## Robot photos
-![photo](./Images/Robot%20photos/Top.png)
-![photo](./Images/Robot%20photos/Bottom.png)
-![photo](./Images/Robot%20photos/Front.png)
-![photo](./Images/Robot%20photos/Rear.png)
-![photo](./Images/Robot%20photos/Left.png)
-![photo](./Images/Robot%20photos/Right.png)
+![photo](./Images/Robot_photos/Top.jpg)
+![photo](./Images/Robot_photos/Bottom.jpg)
+![photo](./Images/Robot_photos/Front.jpg)
+![photo](./Images/Robot_photos/Rear.jpg)
+![photo](./Images/Robot_photos/Left.jpg)
+![photo](./Images/Robot_photos/Right.jpg)
 
 # Performance video
 
