@@ -66,7 +66,7 @@ We use a color sensor to detect and determine the color of lines, a gyroscope to
 
 # Engineering factor
 
-We used components from the MINDSTORMS EV3 Core Set, a Pixy2, some other technic pieces from other sets and 3D printed [Pixy case](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models/Pixy2Case).
+We used components from the MINDSTORMS EV3 Core Set, a Pixy2, some other technic pieces from other sets and 3D printed [case for Pixy](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models/Pixy2Case).
 
 ***
 
