@@ -67,7 +67,9 @@ As a result of the 2nd tests, we got this graph:
 <h2> Conclusions: </h2>
 The graph of error versus angle can be roughly expressed by the function 
 y=0.00856x^2-0.0967x+0.345
-error=0.345-0.0967angle+0.00856angle^2
+
+error=0.00856angle^2-0.0967angle+0.345
+
 error=horisontal_dist/cos(angle*π/180)
 
 2nd test’s error graph at a distance of 9.1 cm:
