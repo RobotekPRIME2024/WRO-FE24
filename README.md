@@ -45,12 +45,12 @@ We use a medium motor for steering and two medium motors in the back for driving
 ## Chassis design
 <div align=center>
 
- ![photo](./Images/README_photos/Regional_steering.jpg)
+ <img src="./Images/README_photos/Regional_steering.jpg" height="500">
 </div>
-The [photo above](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Images/README_photos/Regional_steering.jpg) shows our [robot from the regional stage](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Models/Regional_robot.io). We mounted the motor for the steering horizontally and used a rack. We used large motors for driving and tried to make an approximation of the Ackermann angle, but later abandoned this idea.
+The [photo above](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Images/README_photos/Regional_steering.jpg) shows our [robot from the regional stage](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Models/Regional_robot.io). We mounted the motor for the steering horizontally and used a rack. We used large motors for driving and tried to make an approximation of the Ackermann angle, but later abandoned this idea on this robot.
 <div align=center>
 
- ![photo](./Images/README_photos/1st_Ackermann_robot.jpg)
+ <img src="./Images/README_photos/1st_Ackermann_robot.jpg" height="500">
 </div>
 In the [photo above](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Images/README_photos/1st_Ackermann_robot.jpg) is the bottom of our robot which we made after regional stage. Structurally it's very similar to the current one but it has different steering geometry. We changed the steering geometry so that the straight lines drawn from the axes of the front wheels intersect on the rear axle, as shown in the photo below. The straight lines of our current robot intersect on the rear axle in one position.
 <div align=center>
@@ -83,9 +83,10 @@ We used components from the MINDSTORMS EV3 Core Set, a Pixy2, some other technic
 # Obstacle management
 
 First you need to configure Pixy2 to detect green and red road signs. Then you need to find the trajectory of the road sign using the Pixy2. To do this, we launch the robot so that it goes around the road sign and records its coordinates using the Pixy2. He takes the center of the road sign as the coordinates. After that, we transfer the data into a table and use the built-in tools in Google Sheets to find the equation. The robot tries to adhere to this trajectory. If the object is red, then x of function are multiplied by 1, and if the object is green, then x of function are multiplied by -1 (inverse function). Our Pixy2 camera ia at angle of 45 degrees so as not to lose the object too early and to detect it far enough away.
+<div align=center>
 
-![photo](./Images/README_photos/Trajectory_of_road_sign.jpg)
-
+ ![photo](./Images/README_photos/Trajectory_of_road_sign.jpg)
+</div>
 Compared to the robot from the regional stage, we only drive with the held of the Pixy2 on the first lap, during which we record the coordinates of the points along which it will drive to avoid road signs on the remaining laps. We use local ododmetry to determine the position of the robot. To calculate the robot's x, we multiply the distance traveled by the cosine of the robot's angle, and to calculate the robot's y we multiply the distance traveled by the sine of the robot's angle. We calculate the distance traveled by multiplying the encoder angle by a coefficient equal to 33 dergrees to cm. On the first lap we record the coordinates of the road signs, and on the rest we drive according to odometry - it's much faster. We reset robot's odometry on turns, without using ultrasonic, namely by calculating the distance traveled between the lines, using a color sensor, motor encoders and a gyroscope.
 
 The final robot program with pseudocode is located in the [Source](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Source).
