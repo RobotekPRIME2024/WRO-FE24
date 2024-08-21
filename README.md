@@ -102,6 +102,7 @@ The final robot program with pseudocode is located in the [Source](https://githu
 ![photo](./Images/Team_photos/Funny.jpg)
 
 ## Robot photos
+![photo](./Images/Robot_photos/Gotham.png)
 ![photo](./Images/Robot_photos/Top.jpg)
 ![photo](./Images/Robot_photos/Bottom.jpg)
 ![photo](./Images/Robot_photos/Front.jpg)
