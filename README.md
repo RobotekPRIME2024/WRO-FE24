@@ -47,7 +47,12 @@ We use a medium motor for steering and two medium motors in the back for driving
 
  ![photo](./Images/README_photos/Regional_steering.jpg)
 </div>
-The [photo above](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Images/README_photos/Regional_steering.jpg) shows our robot from the regionals. We mounted the motor for the steering horizontally and used a rack. We used large motors for driving and tried to make an approximation of the Ackermann angle, but later abandoned this idea.
+The [photo above](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Images/README_photos/Regional_steering.jpg) shows our [robot from the regional stage](https://github.com/RobotekPRIME2024/WRO-FE24/blob/main/Models/Regional_robot.io). We mounted the motor for the steering horizontally and used a rack. We used large motors for driving and tried to make an approximation of the Ackermann angle, but later abandoned this idea.
+<div align=center>
+
+ ![photo](./Images/README_photos/1st_Ackermann_robot.jpg)
+</div>
+In the [photo above](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Images/README_photos/1st_Ackermann_robot.jpg) is the bottom of our robot which we made after regional stage. Structurally it's very similar to the current one but it has different steering geometry. We changed the steering geometry so that the straight lines drawn from the axes of the front wheels intersect on the rear axle, as shown in the photo below. The straight lines of our current robot intersect on the rear axle in one position.
 <div align=center>
 
  ![photo](./Images/README_photos/Ackermann_steering_geometry.png)
