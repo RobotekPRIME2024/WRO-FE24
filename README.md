@@ -47,7 +47,7 @@ We use a medium motor for steering and two medium motors in the back for driving
 
  ![photo](./Images/Regional_steering.jpg)
 </div>
-The photo above shows our robot from the regionals. We used large motors on it and tried to make an approximation of the Ackermann angle.
+The photo above shows our robot from the regionals. We mounted the motor for the steering horizontally and used a rack. We used large motors for driving and tried to make an approximation of the Ackermann angle, but later abandoned this idea.
 <div align=center>
 
  ![photo](./Images/Ackermann_steering_geometry.png)
