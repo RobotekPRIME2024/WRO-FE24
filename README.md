@@ -52,7 +52,7 @@ The [photo above](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Images/
 
  <img src="./Images/README_photos/1st_Ackermann_robot.jpg" height="600">
 </div>
-In the [photo above](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Images/README_photos/1st_Ackermann_robot.jpg) is the bottom of our robot which we made after regional stage. Structurally it's very similar to the current one but it has different steering geometry. We changed the steering geometry so that the straight lines drawn from the axes of the front wheels intersect on the rear axle, as shown in the photo below. The straight lines of our current robot intersect on the rear axle in one position.
+In the [photo above](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Images/README_photos/1st_Ackermann_robot.jpg) is the bottom of our robot which we made after regional stage. Structurally it's very similar to the current one but it has different steering geometry. We changed the steering geometry so that the straight lines drawn from the axes of the front wheels intersect on the rear axle, as shown in the [photo below](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Images/README_photos/Ackermann_steering_geometry.png). The straight lines of our current robot intersect on the rear axle in one position.
 <div align=center>
 
  ![photo](./Images/README_photos/Ackermann_steering_geometry.png)
