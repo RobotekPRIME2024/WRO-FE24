@@ -23,12 +23,12 @@
 * [Engineering factor](#engineering-factor)
 * [Obstacle management](#obstacle-management)
   * [Program and pseudocode](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Source)
-* [Pictures](#pictures)
-  * [Team photos](#team-photos)
-  * [Robot photos](#robot-photos)
 * [Performance video](#performance-video)
   * [Qualification](https://youtu.be/wz5MyXlZ5nA)
   * [Obstacle](https://youtu.be/)
+* [Pictures](#pictures)
+  * [Team photos](#team-photos)
+  * [Robot photos](#robot-photos)
 
 ***
 
@@ -79,7 +79,7 @@ We use a color sensor to detect and determine the color of lines, a gyroscope to
 
 # Engineering factor
 
-We used components from the MINDSTORMS EV3 Core Set, a Pixy2, some other technic pieces from other sets and 3D printed [case for Pixy](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models/Pixy2Case).
+We used components from the MINDSTORMS EV3 Core Set, Expansion Set, a Pixy2, some other technic pieces from other sets and 3D printed [case for Pixy](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Models/Pixy2Case). List of Lego EV3 sets we use in Bricklink can be found [here](https://www.bricklink.com/catalogList.asp?catType=S&catString=166.59.800)
 
 ***
 
@@ -96,6 +96,12 @@ The final robot program with pseudocode is located in the [Source](https://githu
 
 ***
 
+# Performance video
+
+Here is the link to [qualification](https://youtu.be/wz5MyXlZ5nA) and [obstacle](https://youtu.be/) round demostration.
+
+***
+
 # Pictures
 ## Team photos
 ![photo](./Images/Team_photos/Official.jpg)
@@ -108,8 +114,4 @@ The final robot program with pseudocode is located in the [Source](https://githu
 ![photo](./Images/Robot_photos/Front.jpg)
 ![photo](./Images/Robot_photos/Rear.jpg)
 ![photo](./Images/Robot_photos/Left.jpg)
-![photo](./Images/Robot_photos/Right.jpg)
-
-# Performance video
-
-Here is the link to [qualification](https://youtu.be/wz5MyXlZ5nA) and [obstacle](https://youtu.be/) round demostration.
+![photo](./Images/Robot_photos/Right.jpg)00
