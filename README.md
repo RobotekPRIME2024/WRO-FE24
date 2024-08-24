@@ -100,7 +100,7 @@ The final robot program with pseudocode is located in the [Source](https://githu
 
 # Performance video
 
-Here is the link to [qualification](https://youtu.be/wz5MyXlZ5nA) and [obstacle](https://youtu.be/) round demostration.
+Here is the link to [qualification](https://youtu.be/5fwom41VK30) round demostration.
 
 ***
 
