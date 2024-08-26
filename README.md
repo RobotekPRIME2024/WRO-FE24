@@ -25,6 +25,7 @@
   * [Program and pseudocode](https://github.com/RobotekPRIME2024/WRO-FE24/tree/main/Source)
 * [Performance video](#performance-video)
   * [Qualification](https://youtu.be/wz5MyXlZ5nA)
+  * [Obstacle](https://youtu.be/M8BKB8U_-hU)
   * [Obstacle](https://youtu.be/)
 * [Pictures](#pictures)
   * [Team photos](#team-photos)
@@ -100,7 +101,7 @@ The final robot program with pseudocode is located in the [Source](https://githu
 
 # Performance video
 
-Here is the link to [qualification](https://youtu.be/5fwom41VK30) round demostration.
+Here is the link to [qualification](https://youtu.be/5fwom41VK30) and [obstacle](https://youtu.be/M8BKB8U_-hU) rounds demostration.
 
 ***
 
